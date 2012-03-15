@@ -397,6 +397,7 @@ public class PullToRefreshListView extends ListView{
             	
             	if(measuredHeaderHeight > 0 && state != State.REFRESHING){
                 	setHeaderPadding(-measuredHeaderHeight);
+                	requestLayout();
                 }
             }
             

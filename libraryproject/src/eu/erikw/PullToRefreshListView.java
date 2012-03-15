@@ -162,10 +162,10 @@ public class PullToRefreshListView extends ListView{
 		setVerticalFadingEdgeEnabled(false);
 
 		headerContainer = (LinearLayout) LayoutInflater.from(getContext()).inflate(R.layout.pull_to_refresh_header, null);
-		header = (RelativeLayout) headerContainer.findViewById(R.id.header);
-		text = (TextView) header.findViewById(R.id.text);
-		image = (ImageView) header.findViewById(R.id.image);
-		spinner = (ProgressBar) header.findViewById(R.id.spinner);
+		header = (RelativeLayout) headerContainer.findViewById(R.id.ptr_header);
+		text = (TextView) header.findViewById(R.id.ptr_text);
+		image = (ImageView) header.findViewById(R.id.ptr_image);
+		spinner = (ProgressBar) header.findViewById(R.id.ptr_spinner);
 
 		flipAnimation = new RotateAnimation(0, -180, RotateAnimation.RELATIVE_TO_SELF, 0.5f, RotateAnimation.RELATIVE_TO_SELF, 0.5f);
 		flipAnimation.setInterpolator(new LinearInterpolator());

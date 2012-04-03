@@ -3,6 +3,7 @@ local
 local.properties
 bin
 gen
+.DS_Store
 
 # From https://github.com/github/gitignore/raw/master/Android.gitignore
 # built application files
